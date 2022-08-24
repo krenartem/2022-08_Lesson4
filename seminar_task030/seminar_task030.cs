@@ -25,6 +25,14 @@ int [] CreateRandomArray(int Length, int min, int max)
 //     return UserArray;
 // }
 
+// вывод массива на экран
+void ShowArray(int[] array)
+{
+    Console.WriteLine();
+    Console.WriteLine(String.Join(", ", array));
+    Console.WriteLine();
+}
+
 Console.Clear();
 Console.Write("Введите количество элементов массива: ");
 int arrayLength = Convert.ToInt32(Console.ReadLine());
@@ -37,6 +45,4 @@ int[] MyArray = CreateRandomArray(arrayLength, arrayMin, arrayMax);
 
 // int[] MyArray = CreateUserArray();
 
-Console.WriteLine();
-Console.WriteLine(String.Join(", ", MyArray));
-Console.WriteLine();
+ShowArray (MyArray);
